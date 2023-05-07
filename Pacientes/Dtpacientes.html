@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Pacientes</title>
+    <link rel="stylesheet" href="Dtpaciente.css">
+</head>
+
+<body>
+    <header>
+        <h1>Lista de Pacientes</h1>
+    </header>
+    <main>
+        <form class="busqueda">
+            <label for="codigo">Buscar por código:</label>
+            <input type="text" id="codigo" name="codigo" placeholder="Código del paciente">
+            <button type="submit">Buscar</button>
+        </form>
+        <section class="lista-pacientes" id="pacientes">
+            <article class="paciente" data-codigo="001">
+                <h2>Paciente 1</h2>
+                <ul>
+                    <li><strong>Código:</strong> 001</li>
+                    <li><strong>Nombre:</strong> Juan Pérez</li>
+                    <li><strong>Edad:</strong> 45 años</li>
+                    <li><strong>Teléfono:</strong> (123) 456-7890</li>
+                </ul>
+            </article>
+            <article class="paciente" data-codigo="002">
+                <h2>Paciente 2</h2>
+                <ul>
+                    <li><strong>Código:</strong> 002</li>
+                    <li><strong>Nombre:</strong> María Gómez</li>
+                    <li><strong>Edad:</strong> 30 años</li>
+                    <li><strong>Teléfono:</strong> (098) 765-4321</li>
+                </ul>
+            </article>
+            <article class="paciente" data-codigo="003">
+                <h2>Paciente 3</h2>
+                <ul>
+                    <li><strong>Código:</strong> 003</li>
+                    <li><strong>Nombre:</strong> Carlos Rodríguez</li>
+                    <li><strong>Edad:</strong> 35 años</li>
+                    <li><strong>Teléfono:</strong> (555) 123-4567</li>
+                </ul>
+            </article>
+            <article class="paciente" data-codigo="004">
+                <h2>Paciente 4</h2>
+                <ul>
+                    <li><strong>Código:</strong> 004</li>
+                    <li><strong>Nombre:</strong> Jesus Ponce</li>
+                    <li><strong>Edad:</strong> 25 años</li>
+                    <li><strong>Teléfono:</strong> (555) 123-4567</li>
+                </ul>
+            </article>
+            <article class="paciente" data-codigo="005">
+                <h2>Paciente 5</h2>
+                <ul>
+                    <li><strong>Código:</strong> 005</li>
+                    <li><strong>Nombre:</strong> Juan Macias</li>
+                    <li><strong>Edad:</strong> 41 años</li>
+                    <li><strong>Teléfono:</strong> (092) 123-4567</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Angelo Castillo &copy; 2023</p>
+    </footer>
+    <script src="busqueda.js"></script>
+</body>
+
+</html>

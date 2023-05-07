@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Resultados de laboratorio</title>
+	<link rel="stylesheet" href="resultado.css">
+	<script src="resultado.js"></script>
+</head>
+
+<body>
+	<header>
+		<h1>Resultados de laboratorio</h1>
+	</header>
+	<main>
+		<section class="filtro">
+			<h2>Filtrar resultados</h2>
+			<form>
+				<label for="codigo">Código:</label>
+				<input type="text" id="codigo" name="codigo">
+				<br>
+				<input type="submit" value="Buscar" onclick="buscarPaciente(); return false;">
+			</form>
+		</section>
+		<section class="resultados">
+			<h2>Resultados</h2>
+			<table>
+				<thead>
+					<tr>
+						<th>Código</th>
+						<th>Paciente</th>
+						<th>Fecha</th>
+						<th>Examen</th>
+						<th>Resultado</th>
+						<th>Unidades</th>
+						<th>Valores de referencia</th>
+						<th>Acciones</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>123456</td>
+						<td>John Doe</td>
+						<td>2023-05-01</td>
+						<td>Hemograma</td>
+						<td>12.0</td>
+						<td>x10^9/L</td>
+						<td>4.5-11.0</td>
+						<td>Los resultados indican un posible caso de anemia.</td>
+					</tr>
+					<tr>
+						<td>654321</td>
+						<td>Lucas Perez</td>
+						<td>2023-05-02</td>
+						<td>Química sanguínea</td>
+						<td>100</td>
+						<td>mg/dL</td>
+						<td>70-100</td>
+						<td>Los resultados indican niveles normales.</td>
+					</tr>
+					<tr>
+						<td>789012</td>
+						<td>Maria Gomez</td>
+						<td>2023-05-03</td>
+						<td>Perfil lipídico</td>
+						<td>190</td>
+						<td>mg/dL</td>
+						<td>menor a 200</td>
+						<td>Los resultados indican niveles altos de colesterol.</td>
+					</tr>
+					<tr>
+						<td>456789</td>
+						<td>Juan Rodriguez</td>
+						<td>2023-05-04</td>
+						<td>Uroanálisis</td>
+						<td>6.0</td>
+						<td>mg/dL</td>
+						<td>menor a 5.0</td>
+						<td>Los resultados indican la presencia de infección urinaria.</td>
+					</tr>
+					<tr>
+						<td>012345</td>
+						<td>Laura Hernandez</td>
+						<td>2023-05-05</td>
+						<td>Perfil tiroideo</td>
+						<td>4.0</td>
+						<td>ng/dL</td>
+						<td>0.5-5.0</td>
+						<td>Los resultados indican niveles normales de hormonas tiroideas.</td>
+					</tr>
+
+				</tbody>
+			</table>
+		</section>
+	</main>
+</body>
+
+</html>

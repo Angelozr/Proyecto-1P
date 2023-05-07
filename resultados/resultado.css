@@ -1,0 +1,101 @@
+/* Estilos para el cuerpo de la página */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('patron-fondo.jpg');
+  }
+  
+  /* Estilos para el encabezado */
+  header {
+    background-color: #2e86c1;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 36px;
+  }
+  
+  /* Estilos para el contenido principal */
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Estilos para la sección de filtro */
+  .filtro {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+  }
+  
+  .filtro h2 {
+    margin-top: 0;
+  }
+  
+  .filtro form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .filtro label {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  
+  .filtro input[type="text"],
+  .filtro input[type="date"],
+  .filtro input[type="submit"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .filtro input[type="submit"] {
+    background-color: #2e86c1;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .filtro input[type="submit"]:hover {
+    background-color: #466792;
+  }
+  
+  /* Estilos para la sección de resultados */
+  .resultados {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  .resultados h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  th {
+    background-color: #2e86c1;
+    color: #fff;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  

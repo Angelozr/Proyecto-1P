@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Muestras ingresadas</title>
+    <link rel="stylesheet" href="muestra.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Muestras ingresadas</h1>
+    </header>
+    <main>
+        <section class="filtros">
+            <h2>Filtrar por tipo de muestra:</h2>
+            <form>
+                <label>
+                    <input type="checkbox" name="tipo-muestra" value="sangre">
+                    Sangre
+                </label>
+                <label>
+                    <input type="checkbox" name="tipo-muestra" value="orina">
+                    Orina
+                </label>
+                <label>
+                    <input type="checkbox" name="tipo-muestra" value="heces">
+                    Heces
+                </label>
+                <label>
+                    <input type="checkbox" name="tipo-muestra" value="plasma">
+                    Plasma
+                </label>
+                <label>
+                    <input type="checkbox" name="tipo-muestra" value="líquido cefalorraquídeo">
+                Líquido cefalorraquídeo	   
+                </label>
+                <label>
+                    <input type="checkbox" name="tipo-muestra" value="otros">
+                    Otros
+                </label>
+                <br>
+                <div class="filtro-fecha">
+                <label for="fecha">Filtrar por fecha:</label>
+                <input type="date" id="fecha" name="fecha">
+            </div>
+                <br>
+                <input type="submit" value="Filtrar" onclick="filtrarMuestras(); return false;">
+            </form>
+        </section>
+        <section class="muestras">
+            <h2>Muestras</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Paciente</th>
+                        <th>Tipo de muestra</th>
+                        <th>Fecha de ingreso</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>John Doe</td>
+                        <td>Heces</td>
+                        <td>2023-05-04</td>
+                        <td><a href="../resultados/resultados.html" onclick="verDetalleMuestra('001')">Ver detalle</a></td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>Jane Smith</td>
+                        <td>líquido cefalorraquídeo</td>
+                        <td>2023-05-04</td>
+                        <td><a href="../resultados/resultados.html" onclick="verDetalleMuestra('002')">Ver detalle</a></td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>Sarah Johnson</td>
+                        <td>Orina</td>
+                        <td>2023-05-05</td>
+                        <td><a href="../resultados/resultados.html" onclick="verDetalleMuestra('003')">Ver detalle</a></td>
+                    </tr>
+                    <tr>
+                        <td>004</td>
+                        <td>David Lee</td>
+                        <td>Plasma</td>
+                        <td>2023-05-05</td>
+                        <td><a href="../resultados/resultados.html" onclick="verDetalleMuestra('004')">Ver detalle</a></td>
+                    </tr>
+                    <tr>
+                        <td>005</td>
+                        <td>Alice Chen</td>
+                        <td>Orina</td>
+                        <td>2023-05-04</td>
+                        <td><a href="../resultados/resultados.html" onclick="verDetalleMuestra('005')">Ver detalle</a></td>
+                    </tr>
+                    <tr>
+                        <td>006</td>
+                        <td>Tom Wong</td>
+                        <td>Sangre</td>
+                        <td>2023-05-04</td>
+                        <td><a href="../resultados/resultados.html" onclick="verDetalleMuestra('006')">Ver detalle</a></td>
+                    </tr>
+                    <tr>
+                        <td>007</td>
+                        <td>Kate Kim</td>
+                        <td>Orina</td>
+                        <td>2023-05-03</td>
+                        <td><a href="../resultados/resultados.html" onclick="verDetalleMuestra('007')">Ver detalle</a></td>
+                    </tr>
+                    <tr>
+                        <td>008</td>
+                        <td>Michael Brown</td>
+                        <td>Sangre</td>
+                        <td>2023-05-03</td>
+                        <td><a href="../resultados/resultados.html" onclick="verDetalleMuestra('008')">Ver detalle</a></td>
+                    </tr>
+                                                                                                                        
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <br>
+</body>
+</html>

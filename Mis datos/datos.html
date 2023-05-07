@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mis datos</title>
+    <link rel="stylesheet" type="text/css" href="datos.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Mis datos</h1>
+    </header>
+    <main>
+        <form onsubmit="actualizarDatos(event)">
+            <h2>Editar datos personales</h2>
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" value="juan.castillo@example.com">
+            <br>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" value="555-1234">
+            <br>
+            <label for="domicilio">Domicilio:</label>
+            <input type="text" id="domicilio" name="domicilio" value="Avenida Eloy Alfaro">
+            <br>
+            <input type="submit" value="Guardar cambios">
+        </form>
+        <section>
+            <h2>Datos personales</h2>
+            <p><strong>C.I:</strong> <span id="mostrar-c.i">1316671468</span></p>
+            <p><strong>Nombre:</strong> <span id="mostrar-nombre">Juan Andres</span></p>
+            <p><strong>Apellido:</strong> <span id="mostrar-apellido">Castillo</span></p>
+            <p><strong>Correo electrónico:</strong> <span id="mostrar-correo">juan.castillo@example.com</span></p>
+            <p><strong>Teléfono:</strong> <span id="mostrar-telefono">555-1234</span></p>
+            <p><strong>Domicilio:</strong> <span id="mostrar-domicilio">Avenida Eloy Alfaro</span></p>
+            <p><strong>Área:</strong> Microbiología</p>
+        </section>
+    </main>
+    <footer class="pie-de-pagina">
+        <p>Angelo Castillo © 2023</p>
+    </footer>
+    <script src="actualizar.js"></script>
+</body>
+
+</html>
